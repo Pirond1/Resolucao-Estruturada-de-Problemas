@@ -13,9 +13,18 @@ int subtracao(int a, int b){
 	return total;
 }
 
-int media(int a, int b){
+float media(int a, int b){
 	float total;
-	
+	total = ((float)a + b) / 2;
+	return total;	
+}
+
+int maior(int a, int b){
+	if(a > b){
+		return a;
+	}else{
+		return b;
+	}
 }
 
 void main(){
@@ -34,6 +43,10 @@ void main(){
 		}else{
 			if(restoa == 0 && restob != 0){
 				printf("A Media dos Numeros Informados e: %0.2f", media(a, b));
+			}else{
+				if(restoa != 0 && restob == 0){
+					printf("O Maior Numero Informado e: %d", maior(a,b));
+				}
 			}
 		}
 	}

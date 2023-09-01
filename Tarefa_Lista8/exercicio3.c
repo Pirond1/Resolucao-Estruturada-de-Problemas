@@ -10,7 +10,7 @@ void somar(float a, float b, float c){
 void media(float a, float b, float c){
 	float total;
 	total = (a + b + c) / 3;
-	printf("\n A Media dos Valores Informados e: %0.2f", total);
+	printf("\nA Media dos Valores Informados e: %0.2f", total);
 }
 
 void maior(float a, float b, float c){
