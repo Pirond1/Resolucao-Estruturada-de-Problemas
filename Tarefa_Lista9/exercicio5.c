@@ -3,10 +3,10 @@
 
 #define TF 10
 
-void carregar_vetor(int vetorD[TF], int vetorE[TF]){
-	int i, j;
+void carregar_vetor(int vetorD[TF]){
+	int i;
 	printf("<<Carregar Vetores>>\n\n");
-	for(i=0, j=TF-1; i<TF; i++,j--){
+	for(i=0; i<TF; i++){
 		printf("Informe um Valor: ");
 		scanf("%d", &vetorD[i]);
 	}
@@ -31,7 +31,7 @@ void exibir_vetor(int vetor[TF]){
 
 void main(){
 	int vetorD[TF], vetorE[TF];
-	carregar_vetor(vetorD, vetorE);
+	carregar_vetor(vetorD);
 	inverter_vetor(vetorD, vetorE);
 	printf("\n<<Exibir Vetor>>\n");
 	printf("\nVetor D: \n");
