@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-#define TF 10
+#define TF 30
 
 void carregarvetores(int vetor[TF]){
 	int i;
