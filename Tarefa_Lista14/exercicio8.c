@@ -8,6 +8,7 @@
 
 void bingo(int matriz[TL][TC]){
 	int limite = 99, l, c;
+	srand( (unsigned) time(NULL));
 	for(l=0;l<TL;l++){
 		for(c=0;c<TC;c++){
 			matriz[l][c] = ( rand() % limite);
@@ -31,6 +32,8 @@ void informarmatriz(int matriz[TL][TC]){
 		printf("\n");
 	}
 }
+
+// Não consegui fazer ele re-randomizar caso viesse numeros iguais
 
 void main(){
 	int matriz[TL][TC];
