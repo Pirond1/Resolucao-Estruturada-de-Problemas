@@ -2,7 +2,7 @@
 #include <conio.h>
 #include <string.h>
 
-#define TF 3
+#define TF 5
 
 struct Alunos{
 	char nome[30];
